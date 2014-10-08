@@ -15,7 +15,7 @@ A Player class is instantiated with a name and passed the tokens (pieces)
 A Board class is instantiated with the players, pieces and size of the board
 
 
-BOARD CLASS
+<b>BOARD CLASS</b>
                
 The Board contains two key methods
 
@@ -45,7 +45,7 @@ p1 = Player(a,"Player1")
 b = Board(pieces, 6, players)
 
 
-SUCCESSOR FUNCTIONS
+<b>SUCCESSOR FUNCTIONS</b>
 
 There are two functions that do the job of successor functions for this game
 
@@ -59,7 +59,7 @@ get_next_board_positions
 calls get_valid_moves to obtain valid states
 makes boards for all the valid states and returns them	
 
-BEST_MOVE 
+<b>BEST_MOVE </b>
 
 The best_move takes in three params - the player to move, board state and the evaluation
 function to use. The function returns a board with the best move
@@ -86,7 +86,7 @@ euclidean_distance_evaluation
 free_knights_evaluation
 
 
-Free Knights Evaluation
+<b>Free Knights Evaluation</b>
 
 The rationale behind choosing this evaluation is that a terminal state that ends in more mobility for horses should be given higher value that the ones with lesser. 
 
@@ -109,7 +109,7 @@ The location of both pair horses are extracted from the board state and the sum 
 The floor function is called on the sum and is added to the win state value of +1 or deducted from the loss state value of -1
 
 
-OUTPUT
+<b>OUTPUT</b>
 
 complete game played between players with evaluation choice . 
 
@@ -119,38 +119,39 @@ NOTE : Intermediate states are not shown here although they are printed in origi
 
 Initial board state                   
 
-■  ■  ■    ■  ■  ■  
+■  ■  ■  ■  ■  ■  
 
-■  ■  ■    ■  ■  ■  
+■  ■  ■  ■  ■  ■  
 
 ■  ■  ♞  ♘  ■  ■  
 
 ■  ■  ♘  ♞  ■  ■  
 
-■  ■   ■  ■   ■  ■  
+■  ■  ■  ■  ■  ■  
  
-■  ■   ■  ■   ■  ■  
+■  ■  ■  ■  ■  ■  
 
 
 
 End State 
 
 
-♘   ■  ■  ■  ■  ■  
+♘  ■  ■  ■  ■  ■  
 
 ♞  ♞  ■  ■  ■  ■  
 
-♘   ■  ■  ■  ■  ■  
+♘  ■  ■  ■  ■  ■  
 
-■    ■  ■  ■  ■  ■  
+■  ■  ■  ■  ■  ■  
 
-■    ■  ■  ■  ■  ■  
+■  ■  ■  ■  ■  ■  
 
-■    ■  ■  ■  ■  ■  
+■  ■  ■  ■  ■  ■  
 
 
 (Figure 1.1)
-TEST CASES
+
+<b>TEST CASES</b>
 
         1 : DEFAULT ALPHA BETA PRUNING
         2 : ALPHA BETA WITH FREE KNIGHTS FUNCTION EVALUATION
@@ -162,23 +163,23 @@ Note : Run game.py  and run the required test case as  test_cases(number).
 eg. test_cases(4)
 
 
-RESULTS
+<b>RESULTS</b>
 
 A brute force approach (minimax) takes approximately one minute for the following initial state to compute the best move
 
 Initial board state                   
 
-■  ■  ■    ■  ■  ■  
+■  ■  ■  ■  ■  ■  
 
-■  ■  ■    ■  ■  ■  
+■  ■  ■  ■  ■  ■  
 
 ■  ■  ♞  ♘  ■  ■  
 
 ■  ■  ♘  ♞  ■  ■  
 
-■  ■   ■  ■   ■  ■  
+■  ■  ■  ■  ■  ■  
  
-■  ■   ■  ■   ■  ■  
+■  ■  ■  ■  ■  ■  
 
 (Figure 1.2)
 
@@ -188,7 +189,7 @@ Alpha beta pruning takes less than a second for the same initial input configura
 
 
 
-OBSERVATIONS
+<b>OBSERVATIONS</b>
 
 A board size beyond dimensions 10 * 10 takes a very large time to complete. 
 
