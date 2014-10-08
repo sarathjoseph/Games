@@ -1,7 +1,6 @@
-All The King's Horses
 
 
-REPRESENTATION 
+<b>REPRESENTATION <b>
 
 The representation uses the following classes
 
