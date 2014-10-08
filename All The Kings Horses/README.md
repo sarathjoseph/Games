@@ -36,7 +36,7 @@ state ( Its a 2-D array  containing the entire board representation.)
 
 
 
-Example Initialization
+<b>Example Initialization</b>
 
 a = [Piece("WK1", (2, 2), "white", unichr(9822)), Piece("WK2", (3, 3), "white", unichr(9822))]
 
@@ -72,7 +72,7 @@ free_knights_evaluation <br/>
 
 The euclidean_distance_evaluation and free_knights_evaluation are passed in as callbacks.
 
-Example Usage
+<b>Example Usage</b>
 
 best_move(b, p2, free_knights_evaluation)
 best_move(b, p1, euclidean_distance_evaluation)
@@ -99,7 +99,7 @@ Implementation
 
 Whenever a terminal state is encountered, the requisite evaluation function is called passing in the opponent player object. The opponents position is extracted and the points to be awarded or deducted are evaluated by multiplying the sum of legal moves for both knights by 2 or -2. 
 
-Euclidean Distance Evaluation
+<b>Euclidean Distance Evaluation</b>
 
 The Euclidean Distance Evaluation function computes the distance between the pair of horses in a terminal node. Higher difference in distance means in essence more mobility and more chances of winning or losing. More mobility because larger the distance between two pieces, the lesser the chances of impeding each other’s moves.
 
@@ -119,9 +119,9 @@ NOTE : Intermediate states are not shown here although they are printed in origi
 
 Initial board state                   
 
-■  ■  ■  ■  ■  ■  
+■    ■  ■  ■  ■  ■  
 
-■  ■  ■  ■  ■  ■  
+■    ■  ■  ■  ■  ■  
 
 ■  ■  ♞  ♘  ■  ■  
 
