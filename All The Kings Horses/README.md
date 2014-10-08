@@ -116,49 +116,6 @@ The location of both pair horses are extracted from the board state and the sum 
 The floor function is called on the sum and is added to the win state value of +1 or deducted from the loss state value of -1
 
 
-<b>OUTPUT</b>
-
-complete game played between players with evaluation choice . 
-
- game = play(b, p2, evaluation) - Player 2 starts the game and 
-
-NOTE : Intermediate states are not shown here although they are printed in original output
-
-Initial board state                   
-
-■  ■  ■  ■  ■  ■ 
-
-■  ■  ■  ■  ■  ■ 
-
-■  ■  ♞  ♘  ■  ■ 
-
-■  ■  ♘  ♞  ■  ■  
-
-■  ■  ■  ■  ■  ■  
- 
-■  ■  ■  ■  ■  ■  
-
-
-
-End State 
-
-
-♘  ■  ■  ■  ■  ■  
-
-♞  ♞  ■  ■  ■  ■  
-
-♘  ■  ■  ■  ■  ■  
-
-■  ■  ■  ■  ■  ■  
-
-■  ■  ■  ■  ■  ■  
-
-■  ■  ■  ■  ■  ■  
-
-
-
-
-(Figure 1.1)
 
 <b>TEST CASES</b>
 
@@ -170,39 +127,4 @@ End State
 
 Note : Run game.py  and run the required test case as  test_cases(number). 
 eg. test_cases(4)
-
-
-<b>RESULTS</b>
-
-A brute force approach (minimax) takes approximately one minute for the following initial state to compute the best move
-
-Initial board state                   
-
-■  ■  ■  ■  ■  ■  
-
-■  ■  ■  ■  ■  ■  
-
-■  ■  ♞  ♘  ■  ■  
-
-■  ■  ♘  ♞  ■  ■  
-
-■  ■  ■  ■  ■  ■  
- 
-■  ■  ■  ■  ■  ■  
-
-(Figure 1.2)
-
-Alpha beta pruning takes less than a second for the same initial input configuration. 
-
-
-
-
-
-<b>OBSERVATIONS</b>
-
-A board size beyond dimensions 10 * 10 takes a very large time to complete. 
-
-For the initial configuration (Fig 1.2) , Black Wins with whether or not it starts first irrespective of the evaluation functions used. 
-
-
 
