@@ -19,17 +19,17 @@ A Board class is instantiated with the players, pieces and size of the board
                
 The Board contains two key methods
 
-update_board 
-get_occupied
+update_board <br/>
+get_occupied <br/>
 
 The get_occupied method is used to check the board state for squares that are occupied
 The update_board method is used to change the board state and shuffle around pieces
 
 The class also contains the following key instance variables
 
-size
-players
-game_state ( holds location of the four knights)
+size <br/>
+players <br/>
+game_state ( holds location of the four knights) <br/>
 state ( Its a 2-D array  containing the entire board representation.)
 
 
@@ -49,12 +49,12 @@ b = Board(pieces, 6, players)
 
 There are two functions that do the job of successor functions for this game
 
-get_next_board_positions
-get_valid_moves
+get_next_board_positions <br/>
+get_valid_moves <br/>
 
 get_valid_moves takes in a board state and a player and returns the set of valid moves
 
-get_next_board_positions 
+get_next_board_positions  <br/>
 
 calls get_valid_moves to obtain valid states
 makes boards for all the valid states and returns them	
@@ -66,9 +66,9 @@ function to use. The function returns a board with the best move
 
 The e_function param (captures the evaluation function to use) can take three values
 
-TRUE (Uses the default Alpha beta pruning )
-euclidean_distance_evaluation 
-free_knights_evaluation
+TRUE (Uses the default Alpha beta pruning ) <br/>
+euclidean_distance_evaluation <br/>
+free_knights_evaluation <br/>
 
 The euclidean_distance_evaluation and free_knights_evaluation are passed in as callbacks.
 
