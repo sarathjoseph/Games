@@ -119,9 +119,9 @@ NOTE : Intermediate states are not shown here although they are printed in origi
 
 Initial board state                   
 
-■  ■  ■  ■  ■  ■  
+■  	■  	■  	■  		 ■  
 
-■  ■  ■  ■  ■  ■  
+■  	■   	■  	■  		 ■  
 
 ■  ■  ♞  ♘  ■  ■  
 
