@@ -4,9 +4,9 @@
 
 The representation uses the following classes
 
-Board
-Player
-Piece
+Board<br/>
+Player<br/>
+Piece<br/>
 	
 A Piece class is instantiated with the initial position , the name ,color and unicode representation of the piece 
 
