@@ -82,6 +82,11 @@ def alpha_beta(board, alpha, beta, player, depth, max_player):
                 break
         return beta
 
+'''
+
+""" THIS NEEDS TO BE MODIFIED TO SUPPORT DEPTH LIMITED SEARCH """
+
+
 
 def free_knights_evaluation(board, player, max_player):
     """
@@ -190,6 +195,7 @@ def alpha_beta_evaluation(board, alpha, beta, player, depth, max_player, e_funct
                 break
         return beta
 
+'''
 
 def best_move(board, player, e_function):
     # set the algorithm to use for default mode (minmax or alpha-beta)
