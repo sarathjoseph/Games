@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     b = Board(pieces, 6, players)
 
-    def test_cases(num):
+    def test_cases(test):
 
         """
 
@@ -31,10 +31,9 @@ if __name__ == "__main__":
         TEST CASES
 
         1 : DEFAULT ALPHA BETA PRUNING
-        2 : ALPHA BETA WITH FREE KNIGHTS FUNCTION EVALUATION
-        3 : ALPHA BETA WITH EUCLIDEAN DISTANCE FUNCTION EVALUATION
-        4 : A WHOLE GAME (USING KNIGHTS EVALUATION FUNCTION)
-        5 : A WHOLE GAME (USING BOTH KNIGHTS EVALUATION AND EUCLIDEAN E FUNCTION)
+
+
+       NOTE : More Test cases for depth limited search to be added later Depth limited search to be added later
 
         """
 
@@ -42,55 +41,13 @@ if __name__ == "__main__":
         print(b)
         print("\n")
 
-        if num == 1:
+        if test == 1:
 
             """ Test Case 1 : DEFAULT ALPHA BETA PRUNING  """
 
             win_move = best_move(b, p2, False)
             print_move(win_move)
 
-        elif num == 2:
-
-            """ Test Case 2 : ALPHA BETA WITH FREE KNIGHTS FUNCTION EVALUATION  """
-
-            win_move = best_move(b, p2, free_knights_evaluation)
-            print_move(win_move)
-
-        elif num == 3:
-
-            """ Test Case 3 : ALPHA BETA WITH EUCLIDEAN DISTANCE FUNCTION EVALUATION  """
-
-            win_move = best_move(b, p2, euclidean_distance_evaluation)
-            print(win_move)
-
-        elif num == 4:
-
-            """ Test Case 4 : A WHOLE GAME PLAYED OUT BETWEEN THE TWO PLAYERS WITH EVALUATION FUNCTION OF CHOICE """
-            evaluation = dict()
-
-            # Set choice of evaluation functions here
-
-            evaluation["player1"] = free_knights_evaluation
-            evaluation["player2"] = free_knights_evaluation
-
-            game = play(b, p2, evaluation)
-
-            for moves in game:
-                print(moves)
-
-        elif num == 5:
-            """ Test Case 5 : A WHOLE GAME PLAYED OUT BETWEEN THE TWO PLAYERS WITH BOTH EVALUATION FUNCTION """
-            evaluation = dict()
-
-            # Set choice of evaluation functions here
-
-            evaluation["player1"] = euclidean_distance_evaluation
-            evaluation["player2"] = free_knights_evaluation
-
-            game = play(b, p2, evaluation)
-
-            for moves in game:
-                print(moves)
 
     def print_move(win_move):
 
@@ -105,7 +62,7 @@ if __name__ == "__main__":
 
     # EXECUTION OF TEST CASES - SELECT ONE OF THE TEST CASES
 
-    test_cases(4)
+    test_cases(1)
 
 
 
